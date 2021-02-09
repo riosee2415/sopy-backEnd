@@ -1,0 +1,8 @@
+type Query {
+  getAllVideos: [Video!]!
+}
+
+type Mutation {
+  registerVideo(path: String!, title: String!, desc: String!): Boolean!
+  deleteVideo(id: String!): Boolean!
+}

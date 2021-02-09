@@ -1,8 +1,21 @@
-type Student {
+type Video {
+  _id: ID!
+  thumbnailPath: String!
+  title: String!
+  description: String!
+}
+
+type User {
   _id: ID!
   name: String!
-  age: Int!
-  school: String!
   mobile: String!
-  gender: String!
+  email: String!
+  nickName: String!
+  zoneCode: String!
+  address: String!
+  detailAddress: String!
+  videos: [Video!]!
+  subscribeForMe: [User!]!
+  subscribeToOther: [User!]!
+  secretCode: String!
 }

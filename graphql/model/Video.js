@@ -2,25 +2,17 @@ import mongoose from "mongoose";
 
 const Schema = mongoose.Schema;
 
-const Student = new Schema(
+const Video = new Schema(
   {
-    name: {
+    thumbnailPath: {
       type: String,
       required: true,
     },
-    age: {
-      type: Number,
-      required: true,
-    },
-    mobile: {
+    title: {
       type: String,
       required: true,
     },
-    school: {
-      type: String,
-      required: true,
-    },
-    gender: {
+    description: {
       type: String,
       required: true,
     },
@@ -30,4 +22,4 @@ const Student = new Schema(
   }
 );
 
-export default mongoose.model(`Student`, Student, `Student`);
+export default mongoose.model(`Video`, Video, `Video`);
